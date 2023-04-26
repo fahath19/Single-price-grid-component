@@ -1,0 +1,246 @@
+  @import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&family=League+Spartan:wght@700&family=Outfit:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    
+--Cyan: hsl(179, 62%, 43%);
+--Cya: hsl(179, 62%, 43% ,0.7);
+--Bright-Yellow: hsl(71, 73%, 54%);
+
+/* Neutral
+font-family: 'Karla', sans-serif;
+font-family: 'League Spartan', sans-serif;
+font-family: 'Outfit', sans-serif;
+*/
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+
+}
+body{
+   display: grid;
+   place-items: center;
+   max-width: 100%;
+    min-height: 100vh;
+    font-size: 16px;
+    background-color: var(--Light-Gray);
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    margin-top: 5rem ;
+
+
+
+}
+.container{
+    max-height: 900px;
+    margin-bottom: 7rem;
+    
+    border-radius: 0.8rem;
+    border-bottom-right-radius: 1rem;
+     display: grid;
+     place-items: center;
+    
+}
+.community_describtion{
+    max-height: 370px;
+    width: 333px;
+
+    padding: 1.5rem 1.3rem;
+    background-color: white;
+
+
+}
+.main_heading{
+    color: var(--Cyan);
+    margin-bottom: 1.5rem;
+}
+.sub_heading{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4rem;
+    margin-bottom: 1.4rem;
+    color: var(--Bright-Yellow);
+}
+.para_dec{
+    font-size: ;
+    width: 300px;
+    word-spacing: 10px;
+
+    line-height: 1.5rem;
+
+    color: var(--Grayish-Blue);
+    margin-bottom: 20px;
+
+}
+
+.second_content{
+    width: 333px;
+
+    height: 210px;
+    background-color: var(--Cyan);
+    padding: 1.5rem 1.6rem;
+    color: white;
+
+}
+.fees{
+      margin-bottom: 0.8rem;
+      font-weight: 400;
+}
+.amount{
+    display: flex;
+    align-items: center;
+   font-size: 1.8rem;
+   margin-bottom: 0.5rem;
+}
+.amount span{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--Light-Gray);
+    margin-left: 10px;
+}
+.fees_info{
+    font-size: 18px;
+    color: var(--Light-Gray);
+    margin-bottom: 1.2rem;
+
+}
+.btn{
+    display: grid;
+    place-items: center;
+    max-width: 400px;
+    background-color: var(--Bright-Yellow);
+    text-decoration: none;
+    color: var(--Light-Gray);
+    padding: 0.8rem 0px;
+    border-radius: 0.3rem;
+}
+.third-content{
+    width: 333px;
+
+   max-height: 460px;
+    padding: 1.5rem 1.6rem;
+    background-color: var(--Cya);
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+
+
+}
+.why{
+    font-size: 18px;
+    margin-bottom: 1rem;
+    color: white;
+}
+.about{
+    line-height: 1.6rem;
+    color: rgba(235, 229, 229, 0.8);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+@media screen and ( max-width:1440px ) {
+  .container{
+    width: 100%;
+
+  }
+  .community_describtion{
+       width: 790px;
+       padding: 50px 40px ;
+       border-top-right-radius: 0.8rem;
+    border-top-left-radius: 0.8rem;
+
+}
+.main_heading{
+    font-size: 2rem;
+}
+
+.sub_heading{
+   font-size: 1.4rem;
+   
+}
+.para_dec{
+     font-weight: 400;
+       width: 700px;
+       word-spacing: 2px;
+       font-size: 1.2rem;
+
+
+}
+/*----------------------------------------------------------------
+*/
+/*using  class to join two content */
+.join_two_content{
+    display: flex;
+    width: 790px;
+}
+
+.second_content{
+    display: flex;
+    flex-direction: column;
+     justify-content: space-evenly;
+     height: 314px;
+     width: 400px;
+
+    padding: 3rem 2.8rem;
+    border-bottom-left-radius: 0.8rem;
+   
+
+}
+
+.btn{
+    display: grid;
+    place-items: center;
+    max-width: 280px;
+    background-color: var(--Bright-Yellow);
+    text-decoration: none;
+    color: var(--Light-Gray);
+    padding: 0.8rem 0px;
+    border-radius: 0.3rem;
+}
+.second_content:hover {
+     scale: 1.1;
+     transition: all  linear ;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.third-content:hover{
+    transition: all  linear ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+    scale: 1.1;
+}
+
+.btn:hover{
+    background-color: blue;
+    color: black;
+    border-radius: 50px;
+    
+}
+
+
+
+
+/*----------------------------------------------------------------
+*/
+.third-content{
+    width: 400px;
+
+   max-height: 460px;
+   padding: 3rem 2.8rem;
+
+
+    background-color: var(--Cya);
+    border-bottom-right-radius: 0.8rem;
+    border-bottom-left-radius: 0rem;
+
+}
+
+
+
+/*----------------------------------------------------------------
+*/
+
+
+
+
+}
